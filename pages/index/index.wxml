@@ -1,0 +1,44 @@
+<ms-swiper/>
+<!-- 精选主题开始 -->
+<view class="ms-nicegoods">
+  <view class="ms-nicegoods-title">
+    <text>精选主题</text>
+  </view>
+  <navigator class="ms-nicegoods-fruit"
+    open-type="navigate"
+    url="/pages/NiceGoods/nicegoods?home=guowei"
+  >
+    <image src="/img/s1.png" mode="widthFix"></image>
+  </navigator>
+  <navigator class="ms-nicegoods-newshop"
+   open-type="navigate"
+    url="/pages/NiceGoods/nicegoods?home=dianxin"
+    >
+    <image src="/img/s2.png" mode="widthFix"></image>
+    </navigator>
+  <navigator class="ms-nicegoods-girl"
+   open-type="navigate"
+    url="/pages/NiceGoods/nicegoods?home=chaohuo">
+    <image src="/img/s3.png" mode="widthFix"></image>
+  </navigator>
+</view>
+<!-- 精选主题结束 -->
+<!-- 最近新品开始 -->
+<view class="ms-newlists">
+  <view class="ms-newlists-title">
+    <text>最近新品</text>
+  </view>
+    <view class="ms-newlists-container">
+      <view class="ms-newlists-container-list"
+        wx:for='{{json}}'
+        wx:key='index'
+        bindtap="navi"
+        data-item="{{item}}"
+        >
+            <image src="{{item.imageUrl}}" mode="widthFix"></image>
+            <text>{{item.title +  item.count + item.unit}}</text>
+            <text>¥{{item.price}}</text>
+      </view>
+    </view>
+</view>
+<!-- 最近新品结束 -->

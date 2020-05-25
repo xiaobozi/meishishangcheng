@@ -1,0 +1,22 @@
+<view class="ms-goods">
+  <view class="ms-goods-title">
+    <image 
+    mode="widthFix" 
+    src="{{json.bannerList}}"></image>
+  </view>
+  <!-- 商品列表开始 -->
+  <view class="ms-goods-items">
+      <view class="ms-goods-items-item"
+        wx:for='{{json.shopList}}'
+        wx:key='index'
+        bindtap="navi"
+        data-item="{{item}}"
+      >
+          <image src="{{item.imageUrl}}" mode="widthFix"></image>
+            <text>{{item.title + item.count + item.unit}} </text>
+            <text>¥{{item.price}}</text>
+      </view>
+  </view>
+  <!-- 商品列表结束 -->
+
+</view>

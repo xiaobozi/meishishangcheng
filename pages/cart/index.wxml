@@ -1,0 +1,32 @@
+<view class='ms-goods'>
+  <view wx:if="{{flag}}">购物车没有东西了</view>
+  <!-- 商品列表开始 -->
+  <view class="ms-goods-list" wx:for='{{json}}' wx:key='index'>
+    <view class="ms-goods-list-title">
+      <view class="ms-goods-list-name">{{item.title + item.count + item.unit}}
+      </view>
+      <view class="ms-goods-list-price">¥{{item.price}}</view>
+    </view>
+    <checkbox class="ms-goods-list-active" bindtap="select" checked="{{item.checked}}" data-item="{{item}}"></checkbox>
+    <view class="ms-goods-list-computed">
+      <view class="add" bindtap="subtract" data-item="{{item}}">-</view>
+      <view>{{item.num}}</view>
+      <view bindtap="add" data-item="{{item}}">+</view>
+    </view>
+      <view class="ms-goods-list-remove" bindtap="remove" data-item='{{item}}'>×</view>
+  </view>
+  <!-- 商品列表结束 -->
+</view>
+<!-- 底部全选开始 -->
+<view class='ms-bottom'>
+  <view class="l">
+    <checkbox bindtap="allselect" checked="{{allchecked}}"></checkbox>
+    全选
+  </view>
+  <view class="r">
+    <view class="ms-bottom-allprcie">¥{{allprcie}}</view>
+    <view class="ms-bottom-payment" bindtap="topayment">
+    <image src="/img/icon3.png" mode="widthFix"></image></view>
+  </view>
+</view>
+<!-- 底部全选结束 -->

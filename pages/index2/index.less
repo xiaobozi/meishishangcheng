@@ -1,0 +1,102 @@
+.goodsnav {
+        // height: 500rpx;
+    .shopcart {
+        position: absolute;
+        width: 110rpx;
+        height: 110rpx;
+        top: 30rpx;
+        right: 30rpx;
+        .shopcart-count{
+            position: absolute;
+            border-radius: 50%;
+            width: 50rpx;
+            height: 50rpx;
+            top: 10rpx;
+            left: -5rpx;
+            color : #ffffff;
+            text-align: center;
+           background-color: #a8956a;
+        }
+    }
+    .goodsnav-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 450rpx;
+      image {
+        width: 40%;
+      }
+    }
+  
+    .goodsnav-goodscar {
+        width: 90%;
+        margin: auto;
+        color: #ffffff;
+        background-color: #a8956a;
+        display: flex;
+        border-radius: 50rpx;
+        height: 100rpx;
+
+      .count {
+          width: 45%;
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+      }
+  
+      .yes {
+        width: 45%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        image {
+            width: 50rpx;
+            height: 50rpx;
+        }
+      }
+    }
+    .goodsnav-good{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 40rpx;
+    }
+  }
+  .h1 {
+    font-size: 60rpx;
+  }
+  .h3 {
+    font-size: 50rpx;
+  }
+  .h5 {
+    font-size: 40rpx;
+  }
+  .good-details {
+    .good-details-title {
+        height: 100rpx;
+        color: #c8c8cc;
+        display: flex;
+        text-align: center;
+        padding: 16rpx;
+    view {
+        flex: 1;
+        border-bottom:2rpx solid #ededed;
+    }
+      .active {
+        border-bottom-color:#a8956a;
+        color: #a8956a;
+      }
+    }
+  
+    .good-details-content {
+        padding: 20rpx 40rpx;
+        font-size: 40rpx;
+        view {
+            display: none;
+        }
+          .active {
+            display: block;
+          }
+    }
+    
+  }

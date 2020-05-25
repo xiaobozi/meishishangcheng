@@ -1,0 +1,41 @@
+
+<!-- 收货人信息开始 -->
+<view class="ms-pay-address" wx:if='{{address}}'>
+  <view class="ms-pay-address-t">
+    <view class="ms-pay-address-name">收货人 : {{address.userName}}</view>
+    <view class="ms-pay-address-ipone">电话 : {{address.telNumber}}</view>
+  </view>
+  <view class="ms-pay-address-b">
+    {{address.provinceName + address.cityName + address.countyName + address.detailInfo}}
+  </view>
+</view>
+<!-- 收货人信息结束 -->
+<!-- 修改地址开始 -->
+<view class="ms-toaddress" bindtap="toaddress">
+  选择地址
+</view>
+<!-- 修改地址结束 -->
+
+<!-- 商品简介开始 -->
+<view class="ms-pay-goods" wx:for='{{json}}' wx:key='index'>
+    <view class="ms-pay-goods-img">
+      <image src="{{item.imageUrl}}" mode="widthFix"></image>
+    </view>
+    <view class="ms-pay-goods-texts">
+      <view class="ms-pay-goods-text">{{item.title}}</view>
+      <view class="ms-pay-goods-text">¥{{item.price}}</view>
+      <view class="ms-pay-goods-text">×{{item.num}}</view>
+    </view>
+</view>
+<!-- 商品简介结束 -->
+
+<!-- 总价和支付开始 -->
+<view class="ms-pay-bottom">
+  <view class="ms-pay-bottom-l">
+  付款合计 : ¥{{allprcie}}
+  </view>
+  <view class="ms-pay-bottom-r">
+    去付款
+  </view>
+</view>
+<!-- 总价和支付结束 -->

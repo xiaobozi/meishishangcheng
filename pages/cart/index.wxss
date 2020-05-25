@@ -1,0 +1,61 @@
+view.ms-goods view.ms-goods-list {
+  height: 190rpx;
+  border-bottom: 2rpx solid #e6e6e6;
+}
+view.ms-goods view.ms-goods-list .ms-goods-list-title {
+  text-align: center;
+  display: flex;
+  padding-top: 30rpx;
+}
+view.ms-goods view.ms-goods-list .ms-goods-list-title .ms-goods-list-name {
+  flex: 1;
+  margin-left: 100rpx;
+}
+view.ms-goods view.ms-goods-list .ms-goods-list-title .ms-goods-list-price {
+  width: 100rpx;
+  margin-right: 30rpx;
+}
+view.ms-goods view.ms-goods-list .ms-goods-list-computed {
+  width: 300rpx;
+  margin: 30rpx auto;
+  display: flex;
+  justify-content: space-around;
+}
+view.ms-goods .ms-goods-list-remove {
+  position: absolute;
+  right: 20rpx;
+  top: 92rpx;
+}
+.ms-goods-list {
+  position: relative;
+}
+view.ms-goods .ms-goods-list-active {
+  position: absolute;
+  left: 20rpx;
+}
+.ms-toaddress {
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+}
+.ms-bottom {
+  position: fixed;
+  bottom: 0;
+  background-color: #a5966f;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10rpx;
+  height: 120rpx;
+  color: white;
+}
+.ms-bottom .r {
+  display: flex;
+  align-items: center;
+}
+.ms-bottom .r .ms-bottom-payment {
+  display: flex;
+  align-items: center;
+  width: 70rpx;
+}

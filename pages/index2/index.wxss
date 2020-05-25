@@ -1,0 +1,92 @@
+.goodsnav .shopcart {
+  position: absolute;
+  width: 110rpx;
+  height: 110rpx;
+  top: 30rpx;
+  right: 30rpx;
+}
+.goodsnav .shopcart .shopcart-count {
+  position: absolute;
+  border-radius: 50%;
+  width: 50rpx;
+  height: 50rpx;
+  top: 10rpx;
+  left: -5rpx;
+  color: #ffffff;
+  text-align: center;
+  background-color: #a8956a;
+}
+.goodsnav .goodsnav-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 450rpx;
+}
+.goodsnav .goodsnav-img image {
+  width: 40%;
+}
+.goodsnav .goodsnav-goodscar {
+  width: 90%;
+  margin: auto;
+  color: #ffffff;
+  background-color: #a8956a;
+  display: flex;
+  border-radius: 50rpx;
+  height: 100rpx;
+}
+.goodsnav .goodsnav-goodscar .count {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.goodsnav .goodsnav-goodscar .yes {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.goodsnav .goodsnav-goodscar .yes image {
+  width: 50rpx;
+  height: 50rpx;
+}
+.goodsnav .goodsnav-good {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 40rpx;
+}
+.h1 {
+  font-size: 60rpx;
+}
+.h3 {
+  font-size: 50rpx;
+}
+.h5 {
+  font-size: 40rpx;
+}
+.good-details .good-details-title {
+  height: 100rpx;
+  color: #c8c8cc;
+  display: flex;
+  text-align: center;
+  padding: 16rpx;
+}
+.good-details .good-details-title view {
+  flex: 1;
+  border-bottom: 2rpx solid #ededed;
+}
+.good-details .good-details-title .active {
+  border-bottom-color: #a8956a;
+  color: #a8956a;
+}
+.good-details .good-details-content {
+  padding: 20rpx 40rpx;
+  font-size: 40rpx;
+}
+.good-details .good-details-content view {
+  display: none;
+}
+.good-details .good-details-content .active {
+  display: block;
+}

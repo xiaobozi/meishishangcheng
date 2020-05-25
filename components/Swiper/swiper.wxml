@@ -1,0 +1,18 @@
+<swiper 
+  indicator-dots="true"
+  indicator-active-color="black"
+  indicator-color="gray"
+  interval="3000"
+  autoplay="true"
+  circular="true"
+>
+  <swiper-item>
+    <image src="/img/b1.jpg" mode="widthFix"></image>
+  </swiper-item>
+  <swiper-item>
+    <image src="/img/b2.jpg" mode="widthFix"></image>
+  </swiper-item>
+  <swiper-item>
+    <image src="/img/b3.jpg" mode="widthFix"></image>
+  </swiper-item>
+</swiper>

@@ -1,0 +1,32 @@
+<view class="ms-cate">
+    <view class="ms-cate-title ">
+        <view class="ms-cate-title-list {{ item.isActive ? 'active' : ' '}}"
+        wx:for='{{json}}'
+        wx:key='index'
+        bindtap="show"
+        data-i="{{index}}"
+        >
+        {{item.cate}}
+        </view>
+    </view>
+    <view class="ms-cate-content">
+      <view class="ms-cate-content-nav">
+        <image src="{{active.banner}}" mode="widthFix"></image>
+      </view>
+      <view class="ms-cate-content-title">{{active.cate}}</view>
+      <view class="ms-cate-content-goods">
+        <view class="ms-cate-content-list"
+         wx:for='{{active.detail}}'
+        wx:key='index'
+        bindtap="navi"
+        data-item="{{item}}">
+          <view class="ms-cate-content-list-img">
+            <image src="{{item.thumb}}" mode="widthFix"></image>
+          </view>
+          <view class="ms-cate-content-list-text">
+            {{item.name}}
+          </view>
+        </view>
+      </view>
+    </view>
+</view>

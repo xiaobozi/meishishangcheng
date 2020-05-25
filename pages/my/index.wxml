@@ -1,0 +1,45 @@
+<!-- 未登录的页面 -->
+<view wx:if='{{!isLogin}}'>
+  <view class="ms-my-title">
+    <button bindtap="login">登录</button>
+  </view>
+</view>
+<!-- 登录后的页面 -->
+<view class="login" wx:else>
+  <view class="ms-my-title">
+    <view class="ms-my-title-l">
+      <image class="ms-my-title-l-img" src="{{user.avatarUrl}}" mode="widthFix"></image>
+      <text class="ms-my-title-l-name">{{user.nickName}}</text>
+    </view>
+    <view class="ms-my-title-r">
+      关于我们
+    </view>
+  </view>
+
+  <!-- 地址管理开始 -->
+  <view class="ms-my-address">
+    <view class="ms-my-address-manage">
+      <view>地址管理</view>
+      <view class="img iconfont icon-jiantou" bindtap="toaddress"></view>
+    </view>
+    <view class="ms-my-address-context" wx:if='{{address}}'>{{address.userName}}</view>
+    <view class="ms-my-address-context" wx:if='{{address}}'>{{address.telNumber}}</view>
+    <view class="ms-my-address-context" wx:if='{{address}}'>
+    {{address.provinceName + address.cityName + address.countyName + address.detailInfo}}</view>
+  </view>
+  <!-- 地址管理结束 -->
+  <!-- 我的订单开始 -->
+  <view class="ms-my-goods">
+    <view class="ms-my-goods-list">
+      <view class="ms-my-goods-list-title"></view>
+      <view class="ms-my-goods-list-pay">
+        <view class="ms-my-goods-list-money"></view>
+        <view class="ms-my-goods-list-payment"></view>
+      </view>
+    </view>
+  </view>
+  <!-- 我的订单结束 -->
+
+</view>
+
+

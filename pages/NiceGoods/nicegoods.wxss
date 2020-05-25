@@ -1,0 +1,23 @@
+.ms-goods .ms-goods-items {
+  display: flex;
+  flex-wrap: wrap;
+}
+.ms-goods .ms-goods-items .ms-goods-items-item {
+  margin: 10rpx;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 47%;
+  background-color: #f5f5f5;
+  border-radius: 10rpx;
+  height: 310rpx;
+  overflow: hidden;
+  font-size: 30rpx;
+}
+.ms-goods .ms-goods-items .ms-goods-items-item image {
+  width: 40%;
+}
+.ms-goods .ms-goods-items .ms-goods-items-item text {
+  margin: 5rpx 0;
+}

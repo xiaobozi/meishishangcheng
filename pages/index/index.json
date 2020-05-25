@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "ms-swiper" : "/components/Swiper/swiper"
+  }
+}

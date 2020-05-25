@@ -1,0 +1,46 @@
+<!-- 商品图片区开始 -->
+<view class="goodsnav">
+      <view class="shopcart" bindtap="tocart">
+        <image src="/img/cart.png"></image>
+        <view class="shopcart-count">{{nums}}</view>
+      </view>
+    <view class="goodsnav-img">
+      <image src="{{json.imageUrl}}" mode="widthFix"></image>
+    </view>
+    <view class="goodsnav-goodscar">
+      <view class="count">
+        <view class="font">数量 {{json.count * num + json.unit}}</view>
+        <view class="font" bindtap="add">+</view>
+      </view>
+      <view class="yes"  bindtap="addtocart">
+        <view class="font">加入购物车</view>
+        <image src="/img/cart-o.png"></image>
+      </view>
+    </view>
+    <view class="goodsnav-good">
+      <text class="h5">有货</text>
+      <text class="h3">{{json.title}}</text>
+      <text class="h1">¥{{json.price}}</text>
+    </view>     
+
+</view>
+<!-- 商品图片区结束-->
+
+  <!-- 商品详情开始 -->
+<view class="good-details">
+  <view class="good-details-title">
+    <view class="{{item.isActive?'active' : ' '}}" 
+    bindtap="show" 
+    wx:for='{{goods}}'
+    wx:key='index'
+    data-item='{{index}}'
+    >{{item.title}}</view>
+  </view>
+  <view class="good-details-content">
+    <view class="{{item.isActive?'active' : ' '}}"
+    wx:for='{{goods}}'
+    wx:key='index'
+    >{{item.text}}</view>
+  </view>
+</view>
+  <!-- 商品详情结束 -->

@@ -1,0 +1,40 @@
+.ms-cate {
+  display: flex;
+}
+.ms-cate .ms-cate-title .ms-cate-title-list {
+  width: 140rpx;
+  height: 80rpx;
+  padding: 30rpx;
+}
+.ms-cate .ms-cate-title .active {
+  color: #a8956e;
+}
+.ms-cate .ms-cate-content {
+  flex: 1;
+}
+.ms-cate .ms-cate-content .ms-cate-content-nav {
+  width: 100%;
+}
+.ms-cate .ms-cate-content .ms-cate-content-title {
+  text-align: center;
+  color: #a8956e;
+}
+.ms-cate .ms-cate-content .ms-cate-content-goods {
+  display: flex;
+  flex-wrap: wrap;
+}
+.ms-cate .ms-cate-content .ms-cate-content-goods .ms-cate-content-list {
+  width: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 50rpx 0;
+}
+.ms-cate .ms-cate-content .ms-cate-content-goods .ms-cate-content-list .ms-cate-content-list-img {
+  height: 120rpx;
+  width: 40%;
+}
+.ms-cate .ms-cate-content .ms-cate-content-goods .ms-cate-content-list .ms-cate-content-list-text {
+  font-size: 30rpx;
+}
